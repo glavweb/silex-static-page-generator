@@ -1,0 +1,27 @@
+{
+    "name": "glavweb/silex-static-page-generator",
+    "description": "The Silex Static Page Generator package",
+    "authors": [
+        {
+            "name": "nilov",
+            "email": "nilov@glavweb.ru",
+            "homepage": "http://glavweb.ru"
+        },
+        {
+            "name": "GLAVWEB Community",
+            "homepage": "https://github.com/glavweb/silex-static-page-generator/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "silex/silex": "~2.0",
+        "symfony/http-foundation": "^3.2",
+        "symfony/http-kernel": "^3.2",
+        "symfony/routing": "^3.2",
+        "symfony/console": "^3.2",
+        "symfony/filesystem": "^3.2"
+    },
+    "autoload": {
+        "psr-4": { "Glavweb\\SilexStaticPageGenerator\\": "src/" }
+    }
+}
