@@ -22,12 +22,12 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\RouteCollection;
 
 /**
- * Class GenerateStaticPages
+ * Class GenerateStaticPagesCommand
  *
  * @package Glavweb\SilexStaticPageGenerator
  * @author Andrey Nilov <nilov@glavweb.ru>
  */
-class GenerateStaticPages extends Command
+class GenerateStaticPagesCommand extends Command
 {
     /**
      * @var RouteCollection
@@ -55,7 +55,7 @@ class GenerateStaticPages extends Command
     private $staticBaseDir;
 
     /**
-     * GenerateStaticPages constructor.
+     * GenerateStaticPagesCommand constructor.
      *
      * @param RouteCollection      $routeCollection
      * @param ControllerCollection $controllerCollection

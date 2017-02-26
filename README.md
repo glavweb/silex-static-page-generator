@@ -23,7 +23,7 @@ require __DIR__ . '/../vendor/autoload.php';
 use Symfony\Component\Console\Application as ConsoleApplication;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Debug\Debug;
-use Glavweb\SilexStaticPageGenerator\Command\GenerateStaticPages;
+use Glavweb\SilexStaticPageGenerator\Command\GenerateStaticPagesCommand;
 
 $input = new ArgvInput();
 $env = $input->getParameterOption(['--env', '-e'], 'dev');
@@ -43,7 +43,7 @@ $console = new ConsoleApplication();
 $baseUrl = ''; // define the project URL in your the config file
 $webDir  = realpath(__DIR__ . '/../web');
 
-$console->add(new GenerateStaticPages(
+$console->add(new GenerateStaticPagesCommand(
     $app['routes'],
     $app['controllers'],
     $app['url_generator'],
